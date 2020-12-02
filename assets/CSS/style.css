@@ -1,0 +1,222 @@
+/*Title*/
+.title{
+    text-align: center;
+    color: white;
+    background-color: teal;;
+    padding: 15px;
+    animation-name: suitchColorTitle;
+    animation-duration: 7s;
+}
+@keyframes suitchColorTitle {
+    from {background-color: cadetblue;}
+    to {background-color: teal}
+    from{color: cadetblue;}
+    to{color: white;}
+}
+/* The nav bar content */ 
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: cadetblue;
+    text-align: center;
+}
+ul li {
+    float: left;
+    text-align: center;
+  }
+ul li a{
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    animation-name: suitchColorNav;
+    animation-duration: 5s;
+    text-align: center;
+}
+ul{
+    text-align: center;
+    background-color: cadetblue;
+    animation-name: suitchColorNav;
+    animation-duration: 5s;
+}
+@keyframes suitchColorNav {
+    from {background-color: teal;}
+    to {background-color: cadetblue;}
+    from{color: teal;}
+    to{color: white;}
+}
+
+/* scrolling effect from JS */ 
+.sticky {
+    position: fixed;
+    top: 0;
+    margin-left: 70%;
+  }
+  
+  .sticky + .content {
+    padding-top: 10px;
+  }
+
+
+/* The footer */ 
+
+footer{
+    background-color: teal;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.social{
+    display: block;
+}
+i.fab{
+    color: white;
+    font-size: larger;
+    padding: 10px;
+    transition: font-size 2s;
+}
+i.fab:hover{
+    font-size: 30px;
+}
+
+/* Responsive */ 
+@media only screen and (max-width: 768px){
+    body{
+        background-color: blue;
+    }
+    nav p {
+        display:inline-block;
+    }
+    .html_Content{
+        display: flex;
+        flex-direction: column;
+    }
+    .Css_Content{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* MAin content */ 
+
+/* Html Content part */ 
+.html_Content{
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(209, 123, 65, 0.2), 0 6px 20px 0 rgba(236, 121, 75, 0.19);
+    display: flex;
+}
+
+.html_Content .pic_content{
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgb(219, 155, 82), 0 6px 20px 0 rgb(209, 152, 67);
+}
+.html_Content .text_content{
+    padding: 20px;
+}
+.html_Content h1{
+    text-align: center;
+}
+.html_Content .argu_content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+.html_Content i{
+    padding: 10px;
+    margin-left: 20px;
+}
+.html_Content i span {
+    color: teal;
+}
+
+
+/* Css content part */ 
+
+.Css_Content{
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(82, 12, 104, 0.788), 0 6px 20px 0 rgba(82, 12, 104, 0.788);
+    display: flex;
+}
+.Css_Content .pic_content{
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(82, 12, 104, 0.788), 0 6px 20px 0 rgba(82, 12, 104, 0.788);
+}
+.Css_Content .text_content{
+    padding: 20px;
+}
+.Css_Content h1{
+    text-align: center;
+}
+.Css_Content .argu_content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.Css_Content i{
+    padding: 10px;
+    margin-left: 20px;
+}
+.Css_Content i span {
+    color: teal;
+}
+
+/* JS Content */ 
+.JS_Content{
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgb(206, 204, 74), 0 6px 20px 0 rgb(206, 204, 74);
+    display: flex;
+}
+.JS_Content .pic_content{
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgb(220, 223, 37), 0 6px 20px 0 rgb(206, 204, 74);
+    
+}
+.JS_Content .pic_content img {
+    padding-top: 40px;
+}
+.JS_Content .text_content{
+    padding: 20px;
+}
+.JS_Content h1{
+    text-align: center;
+}
+.JS_Content .argu_content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.JS_Content i{
+    padding: 10px;
+    margin-left: 20px;
+}
+.JS_Content i span {
+    color: teal;
+}
+.btn{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.message{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-large;
+    color:green;
+    animation: clignote 2s linear infinite;
+  }
+  @keyframes clignote {  
+    50% { opacity: 0; }
+  
+}
+.imageBecode{
+    text-align: center;
+}
