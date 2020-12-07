@@ -1,8 +1,8 @@
 const words_to_find = [
-    'Albert',
-    'Becode',
-    'Charleroi',
-    'Gembloux'
+    'ALBERT',
+    'BECODE',
+    'CHARLEROI',
+    'GEMBLOUX'
 ];
 
 // creation de l'instance 

@@ -220,3 +220,66 @@ i.fab:hover{
 .imageBecode{
     text-align: center;
 }
+
+/* The hangman part */ 
+
+
+section[id="letters"]{
+    border: none;
+    border-radius: 0.5em;
+    padding: 1rem;
+    background: linear-gradient(to right, #1e3c72,#2a5298);
+    box-shadow: 0 0 1rem #ffffff;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+
+section[id="letters"] ul li {
+    border: 0.1rem solid black;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    /*background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+    */
+    cursor: pointer;
+    margin: 0.1rem;
+    color: white;
+
+}
+
+section[id="word_to_find"] figcaption{
+    border: none;
+    border-radius: 0.5em;
+    padding: 1rem;
+    background: linear-gradient(to right, #1e3c72,#2a5298);
+    box-shadow: 0 0 1rem #ffffff;
+    max-width: 400px;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+/* Les couleur des lettre */
+.good{
+    background: lightgreen;
+}
+.wrong{
+    background: tomato;
+}
+
+/* Effet winner et loser */ 
+.winner{
+    color: lightgreen;
+}
+.winner::after{
+    content: '\01F603';
+}
+.loser{
+    color:tomato;
+}
+.loser::after{
+    content:'\01F625';
+}
