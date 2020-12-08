@@ -111,6 +111,8 @@ i.fab:hover{
     padding: 40px;
     box-shadow: 0 4px 8px 0 rgba(209, 123, 65, 0.2), 0 6px 20px 0 rgba(236, 121, 75, 0.19);
     display: flex;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .html_Content .pic_content{
@@ -127,6 +129,7 @@ i.fab:hover{
     display: flex;
     flex-direction: column;
     text-align: justify;
+    
     
 }
 .html_Content i{
@@ -145,6 +148,8 @@ i.fab:hover{
     padding: 40px;
     box-shadow: 0 4px 8px 0 rgba(82, 12, 104, 0.788), 0 6px 20px 0 rgba(82, 12, 104, 0.788);
     display: flex;
+    justify-content: center;
+    justify-content: space-around;
 }
 .Css_Content .pic_content{
     padding: 10px;
@@ -175,6 +180,8 @@ i.fab:hover{
     padding: 40px;
     box-shadow: 0 4px 8px 0 rgb(206, 204, 74), 0 6px 20px 0 rgb(206, 204, 74);
     display: flex;
+    justify-content: center;
+    justify-content: space-around;
 }
 .JS_Content .pic_content{
     padding: 10px;
@@ -215,8 +222,94 @@ i.fab:hover{
   }
   @keyframes clignote {  
     50% { opacity: 0; }
-  
+
 }
+/*
 .imageBecode{
     text-align: center;
+}
+*/
+
+/* The hangman part */ 
+.hang{
+    background-color: cadetblue;
+    box-shadow: 0 4px 8px 0 rgb(220, 223, 37), 0 6px 20px 0 rgb(206, 204, 74)
+}
+
+p{
+    border: teal solid 2px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+h3{
+    text-align: center;
+    color: white;
+}
+
+section[id="letters"]{
+    border: none;
+    border-radius: 0.5em;
+    padding: 1rem;
+    background: linear-gradient(to right, teal,cadetblue);
+    box-shadow: 0 0 1rem #ffffff;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+
+section[id="letters"] ul li {
+    border: 0.1rem solid teal;
+    border-style: outset;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 0.1rem;
+    color: white;
+
+}
+
+section[id="word_to_find"] figcaption{
+    border: none;
+    border-radius: 0.5em;
+    padding: 1rem;
+    background: linear-gradient(to right, teal,cadetblue);
+    box-shadow: 0 0 1rem #ffffff;
+    max-width: 400px;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+/* Les couleur des lettre */
+.good{
+    background: lightgreen;
+}
+.wrong{
+    background: tomato;
+}
+
+/* Effet winner et loser */ 
+.winner{
+    color: lightgreen;
+}
+.winner::after{
+    content: '\01F603';
+}
+.loser{
+    color:tomato;
+}
+.loser::after{
+    content:'\01F625';
+}
+button{
+    background-color: cadetblue;
+    color: white;
+    border-color: white;
 }
