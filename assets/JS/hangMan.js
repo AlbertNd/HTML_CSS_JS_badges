@@ -18,7 +18,7 @@ init(){
     const word_section_element = document.createElement('section');
     word_section_element.id ="word_to_find";// pour le Css 
 
-    word_section_element.innerHTML = "<figure><figcaption>nombre de lettre à trouver :"+ this.random_word.length+"<hr> lettres trouvés:"+this.letters_found+"<hr> Tentatives :"+this.attempts+"<hr> Erreurs :"+this.errors+"/"+this.attempts+"</figcaption></figure>";
+    word_section_element.innerHTML = "<figure><h3>HangMan</h3> <figcaption> <h3>African Country</h3> The name of the country counts : "+ this.random_word.length+" letters <hr> letters found: "+this.letters_found+"<hr> Tentatives  : "+this.attempts+" / Errors "+this.errors+"</figcaption></figure>";
 
     const letter_section_element = document.createElement('section');
     letter_section_element.id ="letters";
@@ -61,7 +61,7 @@ generateLetterButtons(letter_section_element){
 }
 displayHiddenWord(){
     //: pour remplace le mot cacher par les tirés 
-    const hidden_word =this.random_word.slice().replace(/[A-Z]/g, '*');
+    const hidden_word =this.random_word.slice().replace(/[A-Z]/g, '_');
 
     const paragraph_element = document.createElement('p');
     
@@ -118,7 +118,7 @@ gameOver(word_paragraph){
     className ='disabled');
     
     const button_element=document.createElement('button')
-    button_element.textContent ="Refaire une partie ";
+    button_element.textContent ="PLAY AGAIN";
     
     button_element.addEventListener('click',()=>window.location.reload(false));
     
