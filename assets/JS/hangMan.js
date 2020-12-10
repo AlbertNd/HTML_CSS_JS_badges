@@ -94,7 +94,7 @@ checkIfLetterIsInTheWord(event){
         event.target.classList.add('wrong');
 
     }
-    document.body.querySelector('figcaption').innerHTML = "nombre de lettre à trouver :"+ this.random_word.length+"<hr> lettres trouvés:"+this.letters_found+"<hr> Tentatives :"+this.attempts+"<hr> Erreurs :"+this.errors+"/"+this.attempts;
+    document.body.querySelector('figcaption').innerHTML = "<h3>African Country</h3> The name of the country counts : "+ this.random_word.length+" letters <hr> letters found: "+this.letters_found+"<hr> Tentatives  : "+this.attempts+" / Errors "+this.errors;
     
     this.checkIfwinnerOrLoser();
 }
