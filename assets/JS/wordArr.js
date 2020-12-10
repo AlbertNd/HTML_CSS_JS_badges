@@ -5,7 +5,7 @@ const words_to_find = [
     'BOTSWANA',
     'BURUNDI',
     'CAMEROON',
-    'CHAD',
+    'TCHAD',
     'COMOROS',
     'DJIBOUTI',
     'EGYPT',
